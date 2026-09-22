@@ -2,9 +2,7 @@
 
 A sleek, dark-themed todo app that works like a **Queue (FIFO — First In, First Out)**. Tasks are added to the back and removed from the front, just like a real queue.
 
-![Dark Theme](https://img.shields.io/badge/Theme-Dark-1a1a26?style=flat-square)
-![Vanilla JS](https://img.shields.io/badge/Built_With-Vanilla_JS-f7df1e?style=flat-square)
-![No Dependencies](https://img.shields.io/badge/Dependencies-None-22c55e?style=flat-square)
+**Tech:** Vanilla JS · No Dependencies · Dark Theme
 
 ---
 

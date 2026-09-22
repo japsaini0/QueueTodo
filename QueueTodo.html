@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Queue Todo — FIFO Task Manager</title>
+  <meta name="description" content="A sleek dark-themed FIFO queue todo app for managing tasks in order." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Concept/QueueTodo/style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="app-container">
+      <header class="app-header">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+          <h1>Queue<span class="accent">Todo</span></h1>
+        </div>
+        <p class="subtitle">First In, First Out — one task at a time.</p>
+      </header>
+
+      <form class="input-area" id="taskForm">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="taskInput"
+            class="task-input"
+            placeholder="Add a new task to the queue..."
+            autocomplete="off"
+            maxlength="120"
+          />
+          <button type="submit" class="add-btn" id="addBtn" aria-label="Enqueue task">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="queue-info" id="queueInfo">
+        <div class="queue-stat">
+          <span class="stat-label">Queue size</span>
+          <span class="stat-value" id="queueSize">0</span>
+        </div>
+        <div class="queue-direction">
+          <span class="arrow-label">IN</span>
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+          <div class="queue-dots">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+          <span class="arrow-label">OUT</span>
+        </div>
+        <button class="dequeue-btn" id="dequeueBtn" disabled aria-label="Dequeue task">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6l-2 14H7L5 6"></path>
+            <path d="M10 11v6"></path>
+            <path d="M14 11v6"></path>
+          </svg>
+          <span>Dequeue</span>
+        </button>
+      </div>
+
+      <div class="task-list-container">
+        <ul class="task-list" id="taskList">
+        </ul>
+
+        <div class="empty-state" id="emptyState">
+          <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 7V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3"></path>
+          </svg>
+          <p class="empty-title">Queue is empty</p>
+          <p class="empty-subtitle">Add a task above to get started</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Concept/QueueTodo/app.js"></script>
+</body>
+</html>
