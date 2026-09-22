@@ -8,7 +8,7 @@ A sleek, dark-themed todo app that works like a **Queue (FIFO — First In, Firs
 
 ---
 
-## ✨ Features
+## Features
 
 - **FIFO Queue** — Tasks enqueue at the back, dequeue from the front
 - **Dark Premium UI** — Deep dark backgrounds, purple accent, ambient glow effects
@@ -21,7 +21,7 @@ A sleek, dark-themed todo app that works like a **Queue (FIFO — First In, Firs
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 QueueTodo/
@@ -33,7 +33,7 @@ QueueTodo/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone or download this repo
 2. Open `index.html` in any modern browser
@@ -41,7 +41,7 @@ QueueTodo/
 
 ---
 
-## 🛠️ How It Was Built
+## How It Was Built
 
 ### The Idea
 A todo app where tasks behave like a **queue data structure** — the first task you add is the first one you complete and remove. No cherry-picking, no skipping ahead.
@@ -96,6 +96,6 @@ A todo app where tasks behave like a **queue data structure** — the first task
 
 ---
 
-## 📝 License
+## License
 
 MIT — free to use, modify, and distribute.
