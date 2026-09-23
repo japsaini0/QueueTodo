@@ -23,7 +23,7 @@ A sleek, dark-themed todo app that works like a **Queue (FIFO — First In, Firs
 
 ```
 QueueTodo/
-├── QueueTodo.html      ← Main app page (open this)
+├── QueueTodo.html  ← Main app page (open this)
 ├── style.css       ← Dark theme styles & animations
 ├── app.js          ← FIFO queue logic & rendering
 └── README.md       ← You are here
